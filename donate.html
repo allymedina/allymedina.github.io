@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Elect Ally Medina</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/site.css">
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+        <div class="row">
+            <div class="two-thirds.column" style="margin-top: 25%">
+                <h5>Ally Medina For Emeryville City Council</h5>
+                <p>Contribute today and help get her into office. FPPC# 1387467</p>
+                <p>Your occupation and employer information is required by the FPPC. If you’re mailing a check, please include it on the check.</p>
+                <ul class="address">
+                    <li>Ally Medina for Emeryville City Council 2016</li>
+                    <li>1053 47th St</li>
+                    <li>Emeryville, CA 94608</li>
+                </ul>
+            </div>
+            <div class="one-half column">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" onsubmit="checkForm(this);">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="V7XHGTUU5T4LQ">
+                    <table>
+                        <tr>
+                            <td><span id="formErrorMessage"></span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="hidden" name="on0" value="Occupation">Occupation</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="os0" minlength="4" maxlength="200" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="hidden" name="on1" value="Employer">Employer</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="os1" minlength="3" maxlength="200" required></td>
+                        </tr>
+                    </table>
+                    <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/btn/btn_donate_pp_142x27.png" border="0" name="submit" alt="Donate with PayPal">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        <!--
+        function checkForm(form) {
+            //form.preventDefault();
+            var message = '',
+                canSubmit = true;
+            if (form.os0.value == '') {
+                message = 'Occupation is required';
+                canSubmit = false;
+            }
+            if (form.os1.value == '') {
+                message != '' ? message += ', ' : '';
+                message += 'Employer is required.';
+                canSubmit = false;
+            }
+
+            var err = document.getElementById('formErrorMessage');//.value 
+            err.textContent = message;
+
+            return canSubmit;
+        }
+
+        function isMaxLength(obj){
+            var maxLength = obj.getAttribute ? parseInt(obj.getAttribute('maxlength')) : '';
+            if (obj.getAttribute && obj.value.length > maxLength) {
+                obj.value = obj.value.substring(0, maxLength)
+            }
+                
+        }
+        //-->
+    </script>
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
